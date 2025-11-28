@@ -1,0 +1,15 @@
+[package]
+name = "daemon_forge"
+version = "0.0.1"
+edition = "2024"
+authors = ["Nicolás Núñez <nicon@duck.com>"]
+description = "A robust, cross-platform library for daemonizing Rust applications."
+license = "MIT"
+repository = "https://github.com/TU_USUARIO/daemon_forge" # OBLIGATORIO para que salga el link
+readme = "README.md"
+keywords = ["daemon", "service", "background", "process", "windows"]
+categories = ["os", "os::windows", "os::unix-apis"]
+
+[dependencies]
+[target.'cfg(unix)'.dependencies]
+libc = "0.2"
