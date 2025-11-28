@@ -1,3 +1,6 @@
+[![Crates.io](https://img.shields.io/crates/v/daemon_forge.svg)](https://crates.io/crates/daemon_forge)
+[![Documentation](https://docs.rs/daemon_forge/badge.svg)](https://docs.rs/daemon_forge)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 # DaemonForge
 
 **DaemonForge** is a cross-platform library for creating system daemons (background services) in Rust.
@@ -23,7 +26,7 @@ This crate is suitable for learning and experimentation, but not recommended for
 
 ### Linux/Unix Example
 
-```no_run
+```rust
 use daemon_forge::ForgeDaemon;
 use std::fs::File;
 
@@ -51,7 +54,7 @@ fn main() {
 
 On Windows, it is highly recommended to set a `.name()` for your daemon. This creates a global mutex to ensure uniqueness.
 
-```no_run
+```rust
 use daemon_forge::ForgeDaemon;
 use std::fs::File;
 
