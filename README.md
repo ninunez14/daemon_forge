@@ -1,3 +1,6 @@
+[![Crates.io](https://img.shields.io/crates/v/daemon_forge.svg)](https://crates.io/crates/daemon_forge)
+[![Documentation](https://docs.rs/daemon_forge/badge.svg)](https://docs.rs/daemon_forge)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 # DaemonForge
 
 **DaemonForge** is a cross-platform library for creating system daemons (background services) in Rust.
@@ -9,7 +12,7 @@ This crate is suitable for learning and experimentation, but not recommended for
 
 * **True Cross-Platform Support**:
     * **Unix/Linux**: Implements the canonical daemonization routine (`double-fork`, `setsid`, `umask`, and signal handling).
-    * **Windows**: Uses native "Detached Processes" and manages creation flags for true background execution without a console window.
+    * **Windows**: Uses native "Detached Processes" and manages creation flags for true background execution without a console window (NOT a Windows Service).
 * **Locking Mechanism**:
     * Automatically prevents multiple instances of the same service from running simultaneously.
     * Utilizes `flock` (Unix) and **Global Named Mutexes** (Windows) for reliable exclusion.
@@ -23,21 +26,36 @@ This crate is suitable for learning and experimentation, but not recommended for
 
 ### Linux/Unix Example
 
-```no_run
+```rust
 use daemon_forge::ForgeDaemon;
 use std::fs::File;
 
 fn main() {
-    let stdout = File::create("/tmp/daemon.out").unwrap();
-    let stderr = File::create("/tmp/daemon.err").unwrap();
+    let pwd = env::current_dir().unwrap();
+    let log_path = pwd.join("log.log");
+    let err_path = pwd.join("error.err");
+    let pid_path = pwd.join("pid.pid");
+
+    // (Optional) We open them in append mode so we dont erase the history
+    let stdout_file = OpenOptions::new()
+        .create(true)
+        .append(true)
+        .open(&log_path)
+        .expect("Couldn't open stdout");
+
+    let stderr_file = OpenOptions::new()
+        .create(true)
+        .append(true)
+        .open(&err_path)
+        .expect("Couldn't open stderr");
 
     let daemon = ForgeDaemon::new()
-        .pid_file("/tmp/test.pid")
-        .working_directory("/tmp")
+        .pid_file(&pid_path)
+        .working_directory(&pwd)
         .user("www-data") // Unix specific: drop privileges
         .group("www-data")
-        .stdout(stdout)
-        .stderr(stderr)
+        .stdout(stdout_file)
+        .stderr(stderr_file)
         .start();
 
     match daemon {
@@ -51,21 +69,35 @@ fn main() {
 
 On Windows, it is highly recommended to set a `.name()` for your daemon. This creates a global mutex to ensure uniqueness.
 
-```no_run
+```rust
 use daemon_forge::ForgeDaemon;
 use std::fs::File;
 
 fn main() {
-    // Use absolute paths on Windows for safety
-    let stdout = File::create("C:\\Logs\\service.out").unwrap();
-    let stderr = File::create("C:\\Logs\\service.err").unwrap();
+    let pwd = env::current_dir().unwrap();
+    let log_path = pwd.join("log.log");
+    let err_path = pwd.join("error.err");
+    let pid_path = pwd.join("pid.pid");
+
+    // (Optional) We open them in append mode so we dont erase the history
+    let stdout_file = OpenOptions::new()
+        .create(true)
+        .append(true)
+        .open(&log_path)
+        .expect("Couldn't open stdout");
+
+    let stderr_file = OpenOptions::new()
+        .create(true)
+        .append(true)
+        .open(&err_path)
+        .expect("Couldn't open stderr");
 
     let daemon = ForgeDaemon::new()
         .name("MyUniqueService") // Creates "Global\DaemonForge_MyUniqueService" Mutex
-        .pid_file("C:\\Logs\\service.pid")
-        .working_directory("C:\\Logs")
-        .stdout(stdout)
-        .stderr(stderr)
+        .pid_file(&pid_path)
+        .working_directory(&pwd)
+        .stdout(stdout_file)
+        .stderr(stderr_file)
         .start();
 
     match daemon {
