@@ -71,7 +71,13 @@ pub fn start<T>(daemon: ForgeDaemon<T>) -> DaemonResult<T> {
                     io::Error::last_os_error()
                 )));
             }
-            if libc::chdir(b"/\0".as_ptr() as *const i8) < 0 {
+            #[cfg(not(all(target_os = "linux", target_arch = "aarch64")))]
+            type CChar = i8;
+            
+            #[cfg(all(target_os = "linux", target_arch = "aarch64"))]
+            type CChar = u8;
+            
+            if libc::chdir(b"/\0".as_ptr() as *const CChar) < 0 {
                 return Err(DaemonError::Io(io::Error::last_os_error()));
             }
         }
