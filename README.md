@@ -1,4 +1,3 @@
-```markdown
 [![Crates.io](https://img.shields.io/crates/v/daemon_forge.svg)](https://crates.io/crates/daemon_forge)
 [![Documentation](https://docs.rs/daemon_forge/badge.svg)](https://docs.rs/daemon_forge)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -194,6 +193,3 @@ ForgeDaemon::new()
 
 ```
 
-```
-
-```
