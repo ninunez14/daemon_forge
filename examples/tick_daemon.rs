@@ -1,18 +1,21 @@
 use daemon_forge::ForgeDaemon;
 use std::fs::OpenOptions;
-use std::io::Write;
 use std::thread;
 use std::time::Duration;
 use std::env;
+use std::sync::Arc;
+use std::sync::atomic::{AtomicBool, Ordering};
+use signal_hook::consts::signal::*;
+use signal_hook::flag;
 
-fn main() {
-    // Define where the logs will be stored
+fn main() -> Result<(), Box<dyn std::error::Error>> {
+    // 1. Definir rutas
     let pwd = env::current_dir().unwrap();
     let log_path = pwd.join("ticker.log");
     let err_path = pwd.join("ticker.err");
     let pid_path = pwd.join("ticker.pid");
 
-    // (Optional) We open them in append mode so we dont erase the history
+    // 2. Abrir archivos de log (Append mode)
     let stdout_file = OpenOptions::new()
         .create(true)
         .append(true)
@@ -26,47 +29,57 @@ fn main() {
         .expect("Couldn't open stderr");
 
     println!("Launching a simple ticker Daemon...");
-    println!("Look at ticker.log to see the activity.");
+    println!("Logs will be written to: {:?}", log_path);
 
+    // 3. Configurar el Daemon
     let daemon = ForgeDaemon::new()
-        .name("simple_ticker") 
-        .pid_file(&pid_path)   
+        .name("tick_daemon")
+        .pid_file(&pid_path)
         .working_directory(&pwd)
         .stdout(stdout_file)
         .stderr(stderr_file)
-        .start();
+        // AQUÍ está el cambio principal: Pasamos la lógica como un closure
+        .privileged_action(move || {
+            
+            // --- INICIO CÓDIGO DEL DAEMON ---
+            
+            // A. Configurar manejo de señales para parada limpia (SIGTERM / SIGINT)
+            let term = Arc::new(AtomicBool::new(false));
+            flag::register(SIGTERM, Arc::clone(&term))?; // Systemd Stop
+            flag::register(SIGINT, Arc::clone(&term))?;  // Ctrl+C (Manual)
 
-    match daemon {
-        Ok(_) => {
-            // --- DAEMON CODE  ---
-            
-            // We reopen the file to writo to it in the main loop
-            // (Optional: you could use println! as stdout is redirected already)
-            let mut log = OpenOptions::new().append(true).open(&log_path).unwrap();
-            
+            println!("[Ticker] Servicio iniciado. PID: {}", std::process::id());
+
             let frases = [
                 "Estan vivos",
                 "I have no mouth",
-                "I must screem",
+                "I must scream",
                 "Hello world",
                 "Adios mundo :0"
             ];
 
             let mut i = 0;
-            loop {
+
+            // B. Bucle principal que respeta la señal de parada
+            while !term.load(Ordering::Relaxed) {
                 let frase = frases[i % frases.len()];
-                // Usamos writeln! para asegurar que se escribe en disco
-                if let Err(e) = writeln!(log, "[Ticker] Ping #{} - {}", i, frase) {
-                    eprintln!("Error writting on the log: {}", e); // Irá a ticker.err
-                }
+                
+                // C. Usamos println!: La librería ya redirigió esto al archivo .log
+                println!("[Ticker] Ping #{} - {}", i, frase);
                 
                 i += 1;
+                
+                // Dormir en intervalos cortos para revisar la señal de parada frecuentemente
                 thread::sleep(Duration::from_secs(3));
             }
-        }
-        Err(e) => {
-            eprintln!("Error : {}", e);
-            std::process::exit(1);
-        }
-    }
+
+            println!("[Ticker] Señal de parada recibida. Cerrando limpiamente.");
+            Ok(())
+        });
+
+    // 4. Arrancar usando la lógica refactorizada (Systemd o Fork)
+    // Nota: Usamos la función del módulo unix directamente
+    daemon_forge::ForgeDaemon::start(daemon)?;
+
+    Ok(())
 }

@@ -11,5 +11,8 @@ keywords = ["daemon", "service", "background", "process", "windows"]
 categories = ["os", "os::windows-apis", "os::unix-apis"]
 
 [dependencies]
+signal-hook = "0.3"
+
 [target.'cfg(unix)'.dependencies]
 libc = "0.2"
+sd-notify = "0.4.5"

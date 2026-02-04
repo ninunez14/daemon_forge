@@ -7,9 +7,44 @@ use std::io;
 use std::path::Path;
 use std::process::exit;
 
+#[cfg(target_os = "linux")]
+use sd_notify::NotifyState;
+
+/// Main entry point for Unix systems.
+/// 
+/// It automatically detects if the process is being managed by Systemd (via `NOTIFY_SOCKET`).
+/// - **Systemd Detected:** Runs in the foreground, notifies `READY=1`, and executes the payload.
+/// - **Manual Start:** Performs the classic double-fork machination to daemonize into the background.
 pub fn start<T>(daemon: ForgeDaemon<T>) -> DaemonResult<T> {
+    
+    #[cfg(target_os = "linux")]
+    {
+        // If NOTIFY_SOCKET is present, Systemd expects us to stay in the foreground
+        if std::env::var("NOTIFY_SOCKET").is_ok() {
+            return start_systemd_mode(daemon);
+        }
+    }
+
+    start_background_mode(daemon)
+}
+
+
+#[cfg(target_os = "linux")]
+fn start_systemd_mode<T>(daemon: ForgeDaemon<T>) -> DaemonResult<T> {
+
+    apply_io_redirection(&daemon)?;
+
+    // Notify Systemd that the service is ready.
+    // 'true' tells the library to unset the env var so it doesn't leak to children.
+    let _ = sd_notify::notify(true, &[NotifyState::Ready]);
+
+    execute_daemon_logic(daemon)
+}
+
+/// Double-Fork to detach from terminal and run in background.
+fn start_background_mode<T>(daemon: ForgeDaemon<T>) -> DaemonResult<T> {
     unsafe {
-        // Initial Fork
+        // Fork 1
         if perform_fork()? > 0 {
             exit(0);
         }
@@ -23,18 +58,23 @@ pub fn start<T>(daemon: ForgeDaemon<T>) -> DaemonResult<T> {
         }
 
         // IO Redirection
-        redirect_stream(&daemon.stdin, libc::STDIN_FILENO)?;
-        redirect_stream(&daemon.stdout, libc::STDOUT_FILENO)?;
-        redirect_stream(&daemon.stderr, libc::STDERR_FILENO)?;
+        apply_io_redirection(&daemon)?;
 
-        // Second Fork
+        // Fork 2
         if perform_fork()? > 0 {
             exit(0);
         }
 
-        // --- DAEMON CONTEXT ESTABLISHED ---
+        // Execute the main daemon logic in the grandchild process
+        execute_daemon_logic(daemon)
+    }
+}
 
-        // Environment Management
+/// The core execution logic common to both Systemd and Background modes.
+/// Handles environment, chroot, PID files, privileges, and the user action.
+fn execute_daemon_logic<T>(daemon: ForgeDaemon<T>) -> DaemonResult<T> {
+    unsafe {
+        // --- Environment Management ---
         if daemon.clear_env {
             #[cfg(target_os = "linux")]
             libc::clearenv();
@@ -43,7 +83,7 @@ pub fn start<T>(daemon: ForgeDaemon<T>) -> DaemonResult<T> {
             std::env::set_var(k, v);
         }
 
-        //System Configuration
+        // --- System Configuration ---
         if let Some(mask) = daemon.umask {
             libc::umask(mask as libc::mode_t);
         }
@@ -58,6 +98,7 @@ pub fn start<T>(daemon: ForgeDaemon<T>) -> DaemonResult<T> {
             return Err(DaemonError::Io(io::Error::last_os_error()));
         }
 
+        // --- Chroot Logic ---
         if let Some(root) = &daemon.root {
             let root_c = CString::new(root.to_str().unwrap()).map_err(|_| {
                 DaemonError::Io(io::Error::new(
@@ -71,12 +112,13 @@ pub fn start<T>(daemon: ForgeDaemon<T>) -> DaemonResult<T> {
                     io::Error::last_os_error()
                 )));
             }
+            // Always change dir to "/" after chroot
             if libc::chdir(b"/\0".as_ptr() as *const i8) < 0 {
                 return Err(DaemonError::Io(io::Error::last_os_error()));
             }
         }
 
-        // Locking & PID File Logic
+        // --- Locking & PID File Logic ---
         let effective_lock_path = if let Some(path) = &daemon.pid_file {
             Some(path.clone())
         } else if let Some(name) = &daemon.name {
@@ -92,11 +134,13 @@ pub fn start<T>(daemon: ForgeDaemon<T>) -> DaemonResult<T> {
             }
         }
 
-        // Privileged Action
+        // --- Privileged Action (Payload) ---
+        // This is where the user's loop runs
         let action = daemon.privileged_action.unwrap();
         let result = action()?;
 
-        // Drop Privileges
+        // --- Drop Privileges ---
+        // (Only executed if the action returns, usually cleanup)
         if let Some(group) = &daemon.group {
             set_group(group)?;
         }
@@ -108,7 +152,18 @@ pub fn start<T>(daemon: ForgeDaemon<T>) -> DaemonResult<T> {
     }
 }
 
-// --- Helpers ---
+// =========================================================================
+// Helpers
+// =========================================================================
+
+fn apply_io_redirection<T>(daemon: &ForgeDaemon<T>) -> DaemonResult<()> {
+    unsafe {
+        redirect_stream(&daemon.stdin, libc::STDIN_FILENO)?;
+        redirect_stream(&daemon.stdout, libc::STDOUT_FILENO)?;
+        redirect_stream(&daemon.stderr, libc::STDERR_FILENO)?;
+    }
+    Ok(())
+}
 
 unsafe fn perform_fork() -> DaemonResult<libc::pid_t> {
     let pid = unsafe { libc::fork() };
@@ -161,6 +216,7 @@ unsafe fn write_pid_file_unix(path: &Path) -> DaemonResult<()> {
 
     let fd = file.as_raw_fd();
 
+    // LOCK_NB ensures we don't block if another instance is running
     if unsafe { libc::flock(fd, libc::LOCK_EX | libc::LOCK_NB) } < 0 {
         return Err(DaemonError::TargetLocked);
     }
@@ -168,6 +224,9 @@ unsafe fn write_pid_file_unix(path: &Path) -> DaemonResult<()> {
     let mut file = file;
     let pid = unsafe { libc::getpid() };
     write!(file, "{}", pid)?;
+    
+    // Intentionally leak the file handle to maintain the OS lock 
+    // for the lifetime of the process.
     std::mem::forget(file);
 
     Ok(())

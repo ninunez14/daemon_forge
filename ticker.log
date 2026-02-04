@@ -1,0 +1,874 @@
+Launching a simple ticker Daemon...
+Look at ticker.log to see the activity.
+[Ticker] Ping #0 - Estan vivos
+[Ticker] Ping #1 - I have no mouth
+[Ticker] Ping #2 - I must screem
+[Ticker] Ping #3 - Hello world
+[Ticker] Ping #4 - Adios mundo :0
+[Ticker] Ping #5 - Estan vivos
+[Ticker] Ping #6 - I have no mouth
+[Ticker] Ping #7 - I must screem
+[Ticker] Ping #8 - Hello world
+[Ticker] Ping #9 - Adios mundo :0
+[Ticker] Ping #10 - Estan vivos
+[Ticker] Ping #11 - I have no mouth
+[Ticker] Ping #12 - I must screem
+[Ticker] Ping #13 - Hello world
+[Ticker] Ping #14 - Adios mundo :0
+[Ticker] Ping #15 - Estan vivos
+[Ticker] Ping #16 - I have no mouth
+[Ticker] Ping #17 - I must screem
+[Ticker] Ping #18 - Hello world
+[Ticker] Ping #19 - Adios mundo :0
+[Ticker] Ping #20 - Estan vivos
+[Ticker] Ping #21 - I have no mouth
+[Ticker] Ping #22 - I must screem
+[Ticker] Ping #23 - Hello world
+[Ticker] Ping #24 - Adios mundo :0
+[Ticker] Ping #25 - Estan vivos
+[Ticker] Ping #26 - I have no mouth
+[Ticker] Ping #27 - I must screem
+[Ticker] Ping #28 - Hello world
+[Ticker] Ping #29 - Adios mundo :0
+[Ticker] Ping #30 - Estan vivos
+[Ticker] Ping #31 - I have no mouth
+[Ticker] Ping #32 - I must screem
+[Ticker] Ping #33 - Hello world
+[Ticker] Ping #34 - Adios mundo :0
+[Ticker] Ping #35 - Estan vivos
+[Ticker] Ping #36 - I have no mouth
+[Ticker] Ping #37 - I must screem
+[Ticker] Ping #38 - Hello world
+[Ticker] Ping #39 - Adios mundo :0
+[Ticker] Ping #40 - Estan vivos
+[Ticker] Ping #41 - I have no mouth
+[Ticker] Ping #42 - I must screem
+[Ticker] Ping #43 - Hello world
+[Ticker] Ping #44 - Adios mundo :0
+[Ticker] Ping #45 - Estan vivos
+[Ticker] Ping #46 - I have no mouth
+[Ticker] Ping #47 - I must screem
+[Ticker] Ping #48 - Hello world
+[Ticker] Ping #49 - Adios mundo :0
+[Ticker] Ping #50 - Estan vivos
+[Ticker] Ping #51 - I have no mouth
+[Ticker] Ping #52 - I must screem
+[Ticker] Ping #53 - Hello world
+[Ticker] Ping #54 - Adios mundo :0
+[Ticker] Ping #55 - Estan vivos
+[Ticker] Ping #56 - I have no mouth
+[Ticker] Ping #57 - I must screem
+[Ticker] Ping #58 - Hello world
+[Ticker] Ping #59 - Adios mundo :0
+[Ticker] Ping #60 - Estan vivos
+[Ticker] Ping #61 - I have no mouth
+[Ticker] Ping #62 - I must screem
+[Ticker] Ping #63 - Hello world
+[Ticker] Ping #64 - Adios mundo :0
+[Ticker] Ping #65 - Estan vivos
+[Ticker] Ping #66 - I have no mouth
+[Ticker] Ping #67 - I must screem
+[Ticker] Ping #68 - Hello world
+[Ticker] Ping #69 - Adios mundo :0
+[Ticker] Ping #70 - Estan vivos
+[Ticker] Ping #71 - I have no mouth
+[Ticker] Ping #72 - I must screem
+[Ticker] Ping #73 - Hello world
+[Ticker] Ping #74 - Adios mundo :0
+[Ticker] Ping #75 - Estan vivos
+[Ticker] Ping #76 - I have no mouth
+[Ticker] Ping #77 - I must screem
+[Ticker] Ping #78 - Hello world
+[Ticker] Ping #79 - Adios mundo :0
+[Ticker] Ping #80 - Estan vivos
+[Ticker] Ping #81 - I have no mouth
+[Ticker] Ping #82 - I must screem
+[Ticker] Ping #83 - Hello world
+[Ticker] Ping #84 - Adios mundo :0
+[Ticker] Ping #85 - Estan vivos
+[Ticker] Ping #86 - I have no mouth
+[Ticker] Ping #87 - I must screem
+[Ticker] Ping #88 - Hello world
+[Ticker] Ping #89 - Adios mundo :0
+[Ticker] Ping #90 - Estan vivos
+[Ticker] Ping #91 - I have no mouth
+[Ticker] Ping #92 - I must screem
+[Ticker] Ping #93 - Hello world
+[Ticker] Ping #94 - Adios mundo :0
+[Ticker] Ping #95 - Estan vivos
+[Ticker] Ping #96 - I have no mouth
+[Ticker] Ping #97 - I must screem
+[Ticker] Ping #98 - Hello world
+[Ticker] Ping #99 - Adios mundo :0
+[Ticker] Ping #100 - Estan vivos
+[Ticker] Ping #101 - I have no mouth
+[Ticker] Ping #102 - I must screem
+[Ticker] Ping #103 - Hello world
+[Ticker] Ping #104 - Adios mundo :0
+[Ticker] Ping #105 - Estan vivos
+[Ticker] Ping #106 - I have no mouth
+[Ticker] Ping #107 - I must screem
+[Ticker] Ping #108 - Hello world
+[Ticker] Ping #109 - Adios mundo :0
+[Ticker] Ping #110 - Estan vivos
+[Ticker] Ping #111 - I have no mouth
+[Ticker] Ping #112 - I must screem
+[Ticker] Ping #113 - Hello world
+[Ticker] Ping #114 - Adios mundo :0
+[Ticker] Ping #115 - Estan vivos
+[Ticker] Ping #116 - I have no mouth
+[Ticker] Ping #117 - I must screem
+[Ticker] Ping #118 - Hello world
+[Ticker] Ping #119 - Adios mundo :0
+[Ticker] Ping #120 - Estan vivos
+[Ticker] Ping #121 - I have no mouth
+[Ticker] Ping #122 - I must screem
+[Ticker] Ping #123 - Hello world
+[Ticker] Ping #124 - Adios mundo :0
+[Ticker] Ping #125 - Estan vivos
+[Ticker] Ping #126 - I have no mouth
+[Ticker] Ping #127 - I must screem
+[Ticker] Ping #128 - Hello world
+[Ticker] Ping #129 - Adios mundo :0
+[Ticker] Ping #130 - Estan vivos
+[Ticker] Ping #131 - I have no mouth
+[Ticker] Ping #132 - I must screem
+[Ticker] Ping #133 - Hello world
+[Ticker] Ping #134 - Adios mundo :0
+[Ticker] Ping #135 - Estan vivos
+[Ticker] Ping #136 - I have no mouth
+[Ticker] Ping #137 - I must screem
+[Ticker] Ping #138 - Hello world
+[Ticker] Ping #139 - Adios mundo :0
+[Ticker] Ping #140 - Estan vivos
+[Ticker] Ping #141 - I have no mouth
+[Ticker] Ping #142 - I must screem
+[Ticker] Ping #143 - Hello world
+[Ticker] Ping #144 - Adios mundo :0
+[Ticker] Ping #145 - Estan vivos
+[Ticker] Ping #146 - I have no mouth
+[Ticker] Ping #147 - I must screem
+[Ticker] Ping #148 - Hello world
+[Ticker] Ping #149 - Adios mundo :0
+[Ticker] Ping #150 - Estan vivos
+[Ticker] Ping #151 - I have no mouth
+[Ticker] Ping #152 - I must screem
+[Ticker] Ping #153 - Hello world
+[Ticker] Ping #154 - Adios mundo :0
+[Ticker] Ping #155 - Estan vivos
+[Ticker] Ping #156 - I have no mouth
+[Ticker] Ping #157 - I must screem
+[Ticker] Ping #158 - Hello world
+[Ticker] Ping #159 - Adios mundo :0
+[Ticker] Ping #160 - Estan vivos
+[Ticker] Ping #161 - I have no mouth
+[Ticker] Ping #162 - I must screem
+[Ticker] Ping #163 - Hello world
+[Ticker] Ping #164 - Adios mundo :0
+[Ticker] Ping #165 - Estan vivos
+[Ticker] Ping #166 - I have no mouth
+[Ticker] Ping #167 - I must screem
+[Ticker] Ping #168 - Hello world
+[Ticker] Ping #169 - Adios mundo :0
+[Ticker] Ping #170 - Estan vivos
+[Ticker] Ping #171 - I have no mouth
+[Ticker] Ping #172 - I must screem
+[Ticker] Ping #173 - Hello world
+[Ticker] Ping #174 - Adios mundo :0
+[Ticker] Ping #175 - Estan vivos
+[Ticker] Ping #176 - I have no mouth
+[Ticker] Ping #177 - I must screem
+[Ticker] Ping #178 - Hello world
+[Ticker] Ping #179 - Adios mundo :0
+[Ticker] Ping #180 - Estan vivos
+[Ticker] Ping #181 - I have no mouth
+[Ticker] Ping #182 - I must screem
+[Ticker] Ping #183 - Hello world
+[Ticker] Ping #184 - Adios mundo :0
+[Ticker] Ping #185 - Estan vivos
+[Ticker] Ping #186 - I have no mouth
+[Ticker] Ping #187 - I must screem
+[Ticker] Ping #188 - Hello world
+[Ticker] Ping #189 - Adios mundo :0
+[Ticker] Ping #190 - Estan vivos
+[Ticker] Ping #191 - I have no mouth
+[Ticker] Ping #192 - I must screem
+[Ticker] Ping #193 - Hello world
+[Ticker] Ping #194 - Adios mundo :0
+[Ticker] Ping #195 - Estan vivos
+[Ticker] Ping #196 - I have no mouth
+[Ticker] Ping #197 - I must screem
+[Ticker] Ping #198 - Hello world
+[Ticker] Ping #199 - Adios mundo :0
+[Ticker] Ping #200 - Estan vivos
+[Ticker] Ping #201 - I have no mouth
+[Ticker] Ping #202 - I must screem
+[Ticker] Ping #203 - Hello world
+[Ticker] Ping #204 - Adios mundo :0
+[Ticker] Ping #205 - Estan vivos
+[Ticker] Ping #206 - I have no mouth
+[Ticker] Ping #207 - I must screem
+[Ticker] Ping #208 - Hello world
+[Ticker] Ping #209 - Adios mundo :0
+[Ticker] Ping #210 - Estan vivos
+[Ticker] Ping #211 - I have no mouth
+[Ticker] Ping #212 - I must screem
+[Ticker] Ping #213 - Hello world
+[Ticker] Ping #214 - Adios mundo :0
+[Ticker] Ping #215 - Estan vivos
+[Ticker] Ping #216 - I have no mouth
+[Ticker] Ping #217 - I must screem
+[Ticker] Ping #218 - Hello world
+[Ticker] Ping #219 - Adios mundo :0
+[Ticker] Ping #220 - Estan vivos
+[Ticker] Ping #221 - I have no mouth
+[Ticker] Ping #222 - I must screem
+[Ticker] Ping #223 - Hello world
+[Ticker] Ping #224 - Adios mundo :0
+[Ticker] Ping #225 - Estan vivos
+[Ticker] Ping #226 - I have no mouth
+[Ticker] Ping #227 - I must screem
+[Ticker] Ping #228 - Hello world
+[Ticker] Ping #229 - Adios mundo :0
+[Ticker] Ping #230 - Estan vivos
+[Ticker] Ping #231 - I have no mouth
+[Ticker] Ping #232 - I must screem
+[Ticker] Ping #233 - Hello world
+[Ticker] Ping #234 - Adios mundo :0
+[Ticker] Ping #235 - Estan vivos
+[Ticker] Ping #236 - I have no mouth
+[Ticker] Ping #237 - I must screem
+[Ticker] Ping #238 - Hello world
+[Ticker] Ping #239 - Adios mundo :0
+[Ticker] Ping #240 - Estan vivos
+[Ticker] Ping #241 - I have no mouth
+[Ticker] Ping #242 - I must screem
+[Ticker] Ping #243 - Hello world
+[Ticker] Ping #244 - Adios mundo :0
+[Ticker] Ping #245 - Estan vivos
+[Ticker] Ping #246 - I have no mouth
+[Ticker] Ping #247 - I must screem
+[Ticker] Ping #248 - Hello world
+[Ticker] Ping #249 - Adios mundo :0
+[Ticker] Ping #250 - Estan vivos
+[Ticker] Ping #251 - I have no mouth
+[Ticker] Ping #252 - I must screem
+[Ticker] Ping #253 - Hello world
+[Ticker] Ping #254 - Adios mundo :0
+[Ticker] Ping #255 - Estan vivos
+[Ticker] Ping #256 - I have no mouth
+[Ticker] Ping #257 - I must screem
+[Ticker] Ping #258 - Hello world
+[Ticker] Ping #259 - Adios mundo :0
+[Ticker] Ping #260 - Estan vivos
+[Ticker] Ping #261 - I have no mouth
+[Ticker] Ping #262 - I must screem
+[Ticker] Ping #263 - Hello world
+[Ticker] Ping #264 - Adios mundo :0
+[Ticker] Ping #265 - Estan vivos
+[Ticker] Ping #266 - I have no mouth
+[Ticker] Ping #267 - I must screem
+[Ticker] Ping #268 - Hello world
+[Ticker] Ping #269 - Adios mundo :0
+[Ticker] Ping #270 - Estan vivos
+[Ticker] Ping #271 - I have no mouth
+[Ticker] Ping #272 - I must screem
+[Ticker] Ping #273 - Hello world
+[Ticker] Ping #274 - Adios mundo :0
+[Ticker] Ping #275 - Estan vivos
+[Ticker] Ping #276 - I have no mouth
+[Ticker] Ping #277 - I must screem
+[Ticker] Ping #278 - Hello world
+[Ticker] Ping #279 - Adios mundo :0
+[Ticker] Ping #280 - Estan vivos
+[Ticker] Ping #281 - I have no mouth
+[Ticker] Ping #282 - I must screem
+[Ticker] Ping #283 - Hello world
+[Ticker] Ping #284 - Adios mundo :0
+[Ticker] Ping #285 - Estan vivos
+[Ticker] Ping #286 - I have no mouth
+[Ticker] Ping #287 - I must screem
+[Ticker] Ping #288 - Hello world
+[Ticker] Ping #289 - Adios mundo :0
+[Ticker] Ping #290 - Estan vivos
+[Ticker] Ping #291 - I have no mouth
+[Ticker] Ping #292 - I must screem
+[Ticker] Ping #293 - Hello world
+[Ticker] Ping #294 - Adios mundo :0
+[Ticker] Ping #295 - Estan vivos
+[Ticker] Ping #296 - I have no mouth
+[Ticker] Ping #297 - I must screem
+[Ticker] Ping #298 - Hello world
+[Ticker] Ping #299 - Adios mundo :0
+[Ticker] Ping #300 - Estan vivos
+[Ticker] Ping #301 - I have no mouth
+[Ticker] Ping #302 - I must screem
+[Ticker] Ping #303 - Hello world
+[Ticker] Ping #304 - Adios mundo :0
+[Ticker] Ping #305 - Estan vivos
+[Ticker] Ping #306 - I have no mouth
+[Ticker] Ping #307 - I must screem
+[Ticker] Ping #308 - Hello world
+[Ticker] Ping #309 - Adios mundo :0
+[Ticker] Ping #310 - Estan vivos
+[Ticker] Ping #311 - I have no mouth
+[Ticker] Ping #312 - I must screem
+[Ticker] Ping #313 - Hello world
+[Ticker] Ping #314 - Adios mundo :0
+[Ticker] Ping #315 - Estan vivos
+[Ticker] Ping #316 - I have no mouth
+[Ticker] Ping #317 - I must screem
+[Ticker] Ping #318 - Hello world
+[Ticker] Ping #319 - Adios mundo :0
+[Ticker] Ping #320 - Estan vivos
+[Ticker] Ping #321 - I have no mouth
+[Ticker] Ping #322 - I must screem
+[Ticker] Ping #323 - Hello world
+[Ticker] Ping #324 - Adios mundo :0
+[Ticker] Ping #325 - Estan vivos
+[Ticker] Ping #326 - I have no mouth
+[Ticker] Ping #327 - I must screem
+[Ticker] Ping #328 - Hello world
+[Ticker] Ping #329 - Adios mundo :0
+[Ticker] Ping #330 - Estan vivos
+[Ticker] Ping #331 - I have no mouth
+[Ticker] Ping #332 - I must screem
+[Ticker] Ping #333 - Hello world
+[Ticker] Ping #334 - Adios mundo :0
+[Ticker] Ping #335 - Estan vivos
+[Ticker] Ping #336 - I have no mouth
+[Ticker] Ping #337 - I must screem
+[Ticker] Ping #338 - Hello world
+[Ticker] Ping #339 - Adios mundo :0
+[Ticker] Ping #340 - Estan vivos
+[Ticker] Ping #341 - I have no mouth
+[Ticker] Ping #342 - I must screem
+[Ticker] Ping #343 - Hello world
+[Ticker] Ping #344 - Adios mundo :0
+[Ticker] Ping #345 - Estan vivos
+[Ticker] Ping #346 - I have no mouth
+[Ticker] Ping #347 - I must screem
+[Ticker] Ping #348 - Hello world
+[Ticker] Ping #349 - Adios mundo :0
+[Ticker] Ping #350 - Estan vivos
+[Ticker] Ping #351 - I have no mouth
+[Ticker] Ping #352 - I must screem
+[Ticker] Ping #353 - Hello world
+[Ticker] Ping #354 - Adios mundo :0
+[Ticker] Ping #355 - Estan vivos
+[Ticker] Ping #356 - I have no mouth
+[Ticker] Ping #357 - I must screem
+[Ticker] Ping #358 - Hello world
+[Ticker] Ping #359 - Adios mundo :0
+[Ticker] Ping #360 - Estan vivos
+[Ticker] Ping #361 - I have no mouth
+[Ticker] Ping #362 - I must screem
+[Ticker] Ping #363 - Hello world
+[Ticker] Ping #364 - Adios mundo :0
+[Ticker] Ping #365 - Estan vivos
+[Ticker] Ping #366 - I have no mouth
+[Ticker] Ping #367 - I must screem
+[Ticker] Ping #368 - Hello world
+[Ticker] Ping #369 - Adios mundo :0
+[Ticker] Ping #370 - Estan vivos
+[Ticker] Ping #371 - I have no mouth
+[Ticker] Ping #372 - I must screem
+[Ticker] Ping #373 - Hello world
+[Ticker] Ping #374 - Adios mundo :0
+[Ticker] Ping #375 - Estan vivos
+[Ticker] Ping #376 - I have no mouth
+[Ticker] Ping #377 - I must screem
+[Ticker] Ping #378 - Hello world
+[Ticker] Ping #379 - Adios mundo :0
+[Ticker] Ping #380 - Estan vivos
+[Ticker] Ping #381 - I have no mouth
+[Ticker] Ping #382 - I must screem
+[Ticker] Ping #383 - Hello world
+[Ticker] Ping #384 - Adios mundo :0
+[Ticker] Ping #385 - Estan vivos
+[Ticker] Ping #386 - I have no mouth
+[Ticker] Ping #387 - I must screem
+[Ticker] Ping #388 - Hello world
+[Ticker] Ping #389 - Adios mundo :0
+[Ticker] Ping #390 - Estan vivos
+[Ticker] Ping #391 - I have no mouth
+[Ticker] Ping #392 - I must screem
+[Ticker] Ping #393 - Hello world
+[Ticker] Ping #394 - Adios mundo :0
+[Ticker] Ping #395 - Estan vivos
+[Ticker] Ping #396 - I have no mouth
+[Ticker] Ping #397 - I must screem
+[Ticker] Ping #398 - Hello world
+[Ticker] Ping #399 - Adios mundo :0
+[Ticker] Ping #400 - Estan vivos
+[Ticker] Ping #401 - I have no mouth
+[Ticker] Ping #402 - I must screem
+[Ticker] Ping #403 - Hello world
+[Ticker] Ping #404 - Adios mundo :0
+[Ticker] Ping #405 - Estan vivos
+[Ticker] Ping #406 - I have no mouth
+[Ticker] Ping #407 - I must screem
+[Ticker] Ping #408 - Hello world
+[Ticker] Ping #409 - Adios mundo :0
+[Ticker] Ping #410 - Estan vivos
+[Ticker] Ping #411 - I have no mouth
+[Ticker] Ping #412 - I must screem
+[Ticker] Ping #413 - Hello world
+[Ticker] Ping #414 - Adios mundo :0
+[Ticker] Ping #415 - Estan vivos
+[Ticker] Ping #416 - I have no mouth
+[Ticker] Ping #417 - I must screem
+[Ticker] Ping #418 - Hello world
+[Ticker] Ping #419 - Adios mundo :0
+[Ticker] Ping #420 - Estan vivos
+[Ticker] Ping #421 - I have no mouth
+[Ticker] Ping #422 - I must screem
+[Ticker] Ping #423 - Hello world
+[Ticker] Ping #424 - Adios mundo :0
+[Ticker] Ping #425 - Estan vivos
+[Ticker] Ping #426 - I have no mouth
+[Ticker] Ping #427 - I must screem
+[Ticker] Ping #428 - Hello world
+[Ticker] Ping #429 - Adios mundo :0
+[Ticker] Ping #430 - Estan vivos
+[Ticker] Ping #431 - I have no mouth
+[Ticker] Ping #432 - I must screem
+[Ticker] Ping #433 - Hello world
+[Ticker] Ping #434 - Adios mundo :0
+[Ticker] Ping #435 - Estan vivos
+[Ticker] Ping #436 - I have no mouth
+[Ticker] Ping #437 - I must screem
+[Ticker] Ping #438 - Hello world
+[Ticker] Ping #439 - Adios mundo :0
+[Ticker] Ping #440 - Estan vivos
+[Ticker] Ping #441 - I have no mouth
+[Ticker] Ping #442 - I must screem
+[Ticker] Ping #443 - Hello world
+[Ticker] Ping #444 - Adios mundo :0
+[Ticker] Ping #445 - Estan vivos
+[Ticker] Ping #446 - I have no mouth
+[Ticker] Ping #447 - I must screem
+[Ticker] Ping #448 - Hello world
+[Ticker] Ping #449 - Adios mundo :0
+[Ticker] Ping #450 - Estan vivos
+[Ticker] Ping #451 - I have no mouth
+[Ticker] Ping #452 - I must screem
+[Ticker] Ping #453 - Hello world
+[Ticker] Ping #454 - Adios mundo :0
+[Ticker] Ping #455 - Estan vivos
+[Ticker] Ping #456 - I have no mouth
+[Ticker] Ping #457 - I must screem
+[Ticker] Ping #458 - Hello world
+[Ticker] Ping #459 - Adios mundo :0
+[Ticker] Ping #460 - Estan vivos
+[Ticker] Ping #461 - I have no mouth
+[Ticker] Ping #462 - I must screem
+[Ticker] Ping #463 - Hello world
+[Ticker] Ping #464 - Adios mundo :0
+[Ticker] Ping #465 - Estan vivos
+[Ticker] Ping #466 - I have no mouth
+[Ticker] Ping #467 - I must screem
+[Ticker] Ping #468 - Hello world
+[Ticker] Ping #469 - Adios mundo :0
+[Ticker] Ping #470 - Estan vivos
+[Ticker] Ping #471 - I have no mouth
+[Ticker] Ping #472 - I must screem
+[Ticker] Ping #473 - Hello world
+[Ticker] Ping #474 - Adios mundo :0
+[Ticker] Ping #475 - Estan vivos
+[Ticker] Ping #476 - I have no mouth
+[Ticker] Ping #477 - I must screem
+[Ticker] Ping #478 - Hello world
+[Ticker] Ping #479 - Adios mundo :0
+[Ticker] Ping #480 - Estan vivos
+[Ticker] Ping #481 - I have no mouth
+[Ticker] Ping #482 - I must screem
+[Ticker] Ping #483 - Hello world
+[Ticker] Ping #484 - Adios mundo :0
+[Ticker] Ping #485 - Estan vivos
+[Ticker] Ping #486 - I have no mouth
+[Ticker] Ping #487 - I must screem
+[Ticker] Ping #488 - Hello world
+[Ticker] Ping #489 - Adios mundo :0
+[Ticker] Ping #490 - Estan vivos
+[Ticker] Ping #491 - I have no mouth
+[Ticker] Ping #492 - I must screem
+[Ticker] Ping #493 - Hello world
+[Ticker] Ping #494 - Adios mundo :0
+[Ticker] Ping #495 - Estan vivos
+[Ticker] Ping #496 - I have no mouth
+[Ticker] Ping #497 - I must screem
+[Ticker] Ping #498 - Hello world
+[Ticker] Ping #499 - Adios mundo :0
+[Ticker] Ping #500 - Estan vivos
+[Ticker] Ping #501 - I have no mouth
+[Ticker] Ping #502 - I must screem
+[Ticker] Ping #503 - Hello world
+[Ticker] Ping #504 - Adios mundo :0
+[Ticker] Ping #505 - Estan vivos
+[Ticker] Ping #506 - I have no mouth
+[Ticker] Ping #507 - I must screem
+[Ticker] Ping #508 - Hello world
+[Ticker] Ping #509 - Adios mundo :0
+[Ticker] Ping #510 - Estan vivos
+[Ticker] Ping #511 - I have no mouth
+[Ticker] Ping #512 - I must screem
+[Ticker] Ping #513 - Hello world
+[Ticker] Ping #514 - Adios mundo :0
+[Ticker] Ping #515 - Estan vivos
+[Ticker] Ping #516 - I have no mouth
+[Ticker] Ping #517 - I must screem
+[Ticker] Ping #518 - Hello world
+[Ticker] Ping #519 - Adios mundo :0
+[Ticker] Ping #520 - Estan vivos
+[Ticker] Ping #521 - I have no mouth
+[Ticker] Ping #522 - I must screem
+[Ticker] Ping #523 - Hello world
+[Ticker] Ping #524 - Adios mundo :0
+[Ticker] Ping #525 - Estan vivos
+[Ticker] Ping #526 - I have no mouth
+[Ticker] Ping #527 - I must screem
+[Ticker] Ping #528 - Hello world
+[Ticker] Ping #529 - Adios mundo :0
+[Ticker] Ping #530 - Estan vivos
+[Ticker] Ping #531 - I have no mouth
+[Ticker] Ping #532 - I must screem
+[Ticker] Ping #533 - Hello world
+[Ticker] Ping #534 - Adios mundo :0
+[Ticker] Ping #535 - Estan vivos
+[Ticker] Ping #536 - I have no mouth
+[Ticker] Ping #537 - I must screem
+[Ticker] Servicio iniciado. PID: 8050
+[Ticker] Ping #0 - Estan vivos
+[Ticker] Ping #538 - Hello world
+[Ticker] Ping #1 - I have no mouth
+[Ticker] Ping #539 - Adios mundo :0
+[Ticker] Ping #2 - I must scream
+[Ticker] Ping #540 - Estan vivos
+[Ticker] Ping #3 - Hello world
+[Ticker] Ping #541 - I have no mouth
+[Ticker] Ping #4 - Adios mundo :0
+[Ticker] Ping #542 - I must screem
+[Ticker] Ping #5 - Estan vivos
+[Ticker] Ping #543 - Hello world
+[Ticker] Ping #6 - I have no mouth
+[Ticker] Ping #544 - Adios mundo :0
+[Ticker] Señal de parada recibida. Cerrando limpiamente.
+[Ticker] Ping #545 - Estan vivos
+[Ticker] Ping #546 - I have no mouth
+[Ticker] Ping #547 - I must screem
+[Ticker] Ping #548 - Hello world
+[Ticker] Ping #549 - Adios mundo :0
+[Ticker] Ping #550 - Estan vivos
+[Ticker] Ping #551 - I have no mouth
+[Ticker] Ping #552 - I must screem
+[Ticker] Ping #553 - Hello world
+[Ticker] Ping #554 - Adios mundo :0
+[Ticker] Ping #555 - Estan vivos
+[Ticker] Ping #556 - I have no mouth
+[Ticker] Ping #557 - I must screem
+[Ticker] Ping #558 - Hello world
+[Ticker] Ping #559 - Adios mundo :0
+[Ticker] Ping #560 - Estan vivos
+[Ticker] Ping #561 - I have no mouth
+[Ticker] Ping #562 - I must screem
+[Ticker] Ping #563 - Hello world
+[Ticker] Ping #564 - Adios mundo :0
+[Ticker] Ping #565 - Estan vivos
+[Ticker] Ping #566 - I have no mouth
+[Ticker] Ping #567 - I must screem
+[Ticker] Ping #568 - Hello world
+[Ticker] Ping #569 - Adios mundo :0
+[Ticker] Ping #570 - Estan vivos
+[Ticker] Ping #571 - I have no mouth
+[Ticker] Ping #572 - I must screem
+[Ticker] Ping #573 - Hello world
+[Ticker] Ping #574 - Adios mundo :0
+[Ticker] Ping #575 - Estan vivos
+[Ticker] Ping #576 - I have no mouth
+[Ticker] Ping #577 - I must screem
+[Ticker] Ping #578 - Hello world
+[Ticker] Ping #579 - Adios mundo :0
+[Ticker] Ping #580 - Estan vivos
+[Ticker] Ping #581 - I have no mouth
+[Ticker] Ping #582 - I must screem
+[Ticker] Ping #583 - Hello world
+[Ticker] Ping #584 - Adios mundo :0
+[Ticker] Ping #585 - Estan vivos
+[Ticker] Ping #586 - I have no mouth
+[Ticker] Ping #587 - I must screem
+[Ticker] Ping #588 - Hello world
+[Ticker] Ping #589 - Adios mundo :0
+[Ticker] Ping #590 - Estan vivos
+[Ticker] Ping #591 - I have no mouth
+[Ticker] Ping #592 - I must screem
+[Ticker] Ping #593 - Hello world
+[Ticker] Ping #594 - Adios mundo :0
+[Ticker] Ping #595 - Estan vivos
+[Ticker] Ping #596 - I have no mouth
+[Ticker] Ping #597 - I must screem
+[Ticker] Ping #598 - Hello world
+[Ticker] Ping #599 - Adios mundo :0
+[Ticker] Ping #600 - Estan vivos
+[Ticker] Ping #601 - I have no mouth
+[Ticker] Ping #602 - I must screem
+[Ticker] Ping #603 - Hello world
+[Ticker] Ping #604 - Adios mundo :0
+[Ticker] Ping #605 - Estan vivos
+[Ticker] Ping #606 - I have no mouth
+[Ticker] Ping #607 - I must screem
+[Ticker] Ping #608 - Hello world
+[Ticker] Ping #609 - Adios mundo :0
+[Ticker] Ping #610 - Estan vivos
+[Ticker] Ping #611 - I have no mouth
+[Ticker] Ping #612 - I must screem
+[Ticker] Ping #613 - Hello world
+[Ticker] Ping #614 - Adios mundo :0
+[Ticker] Ping #615 - Estan vivos
+[Ticker] Ping #616 - I have no mouth
+[Ticker] Ping #617 - I must screem
+[Ticker] Ping #618 - Hello world
+[Ticker] Ping #619 - Adios mundo :0
+[Ticker] Ping #620 - Estan vivos
+[Ticker] Ping #621 - I have no mouth
+[Ticker] Servicio iniciado. PID: 9375
+[Ticker] Ping #0 - Estan vivos
+[Ticker] Ping #622 - I must screem
+[Ticker] Ping #1 - I have no mouth
+[Ticker] Ping #623 - Hello world
+[Ticker] Ping #624 - Adios mundo :0
+[Ticker] Ping #2 - I must scream
+[Ticker] Ping #625 - Estan vivos
+[Ticker] Ping #3 - Hello world
+[Ticker] Ping #626 - I have no mouth
+[Ticker] Ping #4 - Adios mundo :0
+[Ticker] Ping #627 - I must screem
+[Ticker] Ping #5 - Estan vivos
+[Ticker] Ping #628 - Hello world
+[Ticker] Señal de parada recibida. Cerrando limpiamente.
+[Ticker] Ping #629 - Adios mundo :0
+[Ticker] Ping #630 - Estan vivos
+[Ticker] Ping #631 - I have no mouth
+[Ticker] Ping #632 - I must screem
+[Ticker] Ping #633 - Hello world
+[Ticker] Ping #634 - Adios mundo :0
+[Ticker] Ping #635 - Estan vivos
+[Ticker] Ping #636 - I have no mouth
+[Ticker] Ping #637 - I must screem
+[Ticker] Ping #638 - Hello world
+[Ticker] Ping #639 - Adios mundo :0
+[Ticker] Ping #640 - Estan vivos
+[Ticker] Ping #641 - I have no mouth
+[Ticker] Ping #642 - I must screem
+[Ticker] Ping #643 - Hello world
+[Ticker] Ping #644 - Adios mundo :0
+[Ticker] Ping #645 - Estan vivos
+[Ticker] Ping #646 - I have no mouth
+[Ticker] Ping #647 - I must screem
+[Ticker] Ping #648 - Hello world
+[Ticker] Ping #649 - Adios mundo :0
+[Ticker] Ping #650 - Estan vivos
+[Ticker] Ping #651 - I have no mouth
+[Ticker] Ping #652 - I must screem
+[Ticker] Ping #653 - Hello world
+[Ticker] Ping #654 - Adios mundo :0
+[Ticker] Ping #655 - Estan vivos
+[Ticker] Ping #656 - I have no mouth
+[Ticker] Ping #657 - I must screem
+[Ticker] Ping #658 - Hello world
+[Ticker] Ping #659 - Adios mundo :0
+[Ticker] Ping #660 - Estan vivos
+[Ticker] Ping #661 - I have no mouth
+[Ticker] Ping #662 - I must screem
+[Ticker] Ping #663 - Hello world
+[Ticker] Ping #664 - Adios mundo :0
+[Ticker] Ping #665 - Estan vivos
+[Ticker] Ping #666 - I have no mouth
+[Ticker] Ping #667 - I must screem
+[Ticker] Ping #668 - Hello world
+[Ticker] Ping #669 - Adios mundo :0
+[Ticker] Ping #670 - Estan vivos
+[Ticker] Ping #671 - I have no mouth
+[Ticker] Ping #672 - I must screem
+[Ticker] Ping #673 - Hello world
+[Ticker] Ping #674 - Adios mundo :0
+[Ticker] Ping #675 - Estan vivos
+[Ticker] Ping #676 - I have no mouth
+[Ticker] Ping #677 - I must screem
+[Ticker] Ping #678 - Hello world
+[Ticker] Ping #679 - Adios mundo :0
+[Ticker] Ping #680 - Estan vivos
+[Ticker] Ping #681 - I have no mouth
+[Ticker] Ping #682 - I must screem
+[Ticker] Ping #683 - Hello world
+[Ticker] Ping #684 - Adios mundo :0
+[Ticker] Ping #685 - Estan vivos
+[Ticker] Ping #686 - I have no mouth
+[Ticker] Ping #687 - I must screem
+[Ticker] Ping #688 - Hello world
+[Ticker] Ping #689 - Adios mundo :0
+[Ticker] Ping #690 - Estan vivos
+[Ticker] Ping #691 - I have no mouth
+[Ticker] Ping #692 - I must screem
+[Ticker] Ping #693 - Hello world
+[Ticker] Ping #694 - Adios mundo :0
+[Ticker] Ping #695 - Estan vivos
+[Ticker] Ping #696 - I have no mouth
+[Ticker] Ping #697 - I must screem
+[Ticker] Ping #698 - Hello world
+[Ticker] Ping #699 - Adios mundo :0
+[Ticker] Ping #700 - Estan vivos
+[Ticker] Ping #701 - I have no mouth
+[Ticker] Ping #702 - I must screem
+[Ticker] Ping #703 - Hello world
+[Ticker] Ping #704 - Adios mundo :0
+[Ticker] Ping #705 - Estan vivos
+[Ticker] Ping #706 - I have no mouth
+[Ticker] Ping #707 - I must screem
+[Ticker] Ping #708 - Hello world
+[Ticker] Ping #709 - Adios mundo :0
+[Ticker] Ping #710 - Estan vivos
+[Ticker] Ping #711 - I have no mouth
+[Ticker] Ping #712 - I must screem
+[Ticker] Ping #713 - Hello world
+[Ticker] Ping #714 - Adios mundo :0
+[Ticker] Ping #715 - Estan vivos
+[Ticker] Ping #716 - I have no mouth
+[Ticker] Ping #717 - I must screem
+[Ticker] Ping #718 - Hello world
+[Ticker] Ping #719 - Adios mundo :0
+[Ticker] Ping #720 - Estan vivos
+[Ticker] Ping #721 - I have no mouth
+[Ticker] Ping #722 - I must screem
+[Ticker] Ping #723 - Hello world
+[Ticker] Ping #724 - Adios mundo :0
+[Ticker] Ping #725 - Estan vivos
+[Ticker] Ping #726 - I have no mouth
+[Ticker] Ping #727 - I must screem
+[Ticker] Ping #728 - Hello world
+[Ticker] Ping #729 - Adios mundo :0
+[Ticker] Ping #730 - Estan vivos
+[Ticker] Ping #731 - I have no mouth
+[Ticker] Ping #732 - I must screem
+[Ticker] Ping #733 - Hello world
+[Ticker] Ping #734 - Adios mundo :0
+[Ticker] Ping #735 - Estan vivos
+[Ticker] Ping #736 - I have no mouth
+[Ticker] Ping #737 - I must screem
+[Ticker] Ping #738 - Hello world
+[Ticker] Ping #739 - Adios mundo :0
+[Ticker] Ping #740 - Estan vivos
+[Ticker] Ping #741 - I have no mouth
+[Ticker] Ping #742 - I must screem
+[Ticker] Ping #743 - Hello world
+[Ticker] Ping #744 - Adios mundo :0
+[Ticker] Ping #745 - Estan vivos
+[Ticker] Ping #746 - I have no mouth
+[Ticker] Ping #747 - I must screem
+[Ticker] Ping #748 - Hello world
+[Ticker] Ping #749 - Adios mundo :0
+[Ticker] Ping #750 - Estan vivos
+[Ticker] Ping #751 - I have no mouth
+[Ticker] Ping #752 - I must screem
+[Ticker] Ping #753 - Hello world
+[Ticker] Ping #754 - Adios mundo :0
+[Ticker] Ping #755 - Estan vivos
+[Ticker] Ping #756 - I have no mouth
+[Ticker] Ping #757 - I must screem
+[Ticker] Ping #758 - Hello world
+[Ticker] Ping #759 - Adios mundo :0
+[Ticker] Ping #760 - Estan vivos
+[Ticker] Ping #761 - I have no mouth
+[Ticker] Ping #762 - I must screem
+[Ticker] Ping #763 - Hello world
+[Ticker] Ping #764 - Adios mundo :0
+[Ticker] Ping #765 - Estan vivos
+[Ticker] Ping #766 - I have no mouth
+[Ticker] Ping #767 - I must screem
+[Ticker] Ping #768 - Hello world
+[Ticker] Ping #769 - Adios mundo :0
+[Ticker] Ping #770 - Estan vivos
+[Ticker] Ping #771 - I have no mouth
+[Ticker] Ping #772 - I must screem
+[Ticker] Ping #773 - Hello world
+[Ticker] Ping #774 - Adios mundo :0
+[Ticker] Ping #775 - Estan vivos
+[Ticker] Ping #776 - I have no mouth
+[Ticker] Ping #777 - I must screem
+[Ticker] Ping #778 - Hello world
+[Ticker] Ping #779 - Adios mundo :0
+[Ticker] Ping #780 - Estan vivos
+[Ticker] Ping #781 - I have no mouth
+[Ticker] Ping #782 - I must screem
+[Ticker] Ping #783 - Hello world
+[Ticker] Ping #784 - Adios mundo :0
+[Ticker] Ping #785 - Estan vivos
+[Ticker] Ping #786 - I have no mouth
+[Ticker] Ping #787 - I must screem
+[Ticker] Ping #788 - Hello world
+[Ticker] Ping #789 - Adios mundo :0
+[Ticker] Ping #790 - Estan vivos
+[Ticker] Ping #791 - I have no mouth
+[Ticker] Ping #792 - I must screem
+[Ticker] Ping #793 - Hello world
+[Ticker] Ping #794 - Adios mundo :0
+[Ticker] Ping #795 - Estan vivos
+[Ticker] Ping #796 - I have no mouth
+[Ticker] Ping #797 - I must screem
+[Ticker] Servicio iniciado. PID: 12474
+[Ticker] Ping #0 - Estan vivos
+[Ticker] Ping #798 - Hello world
+[Ticker] Ping #1 - I have no mouth
+[Ticker] Ping #799 - Adios mundo :0
+[Ticker] Ping #2 - I must scream
+[Ticker] Ping #800 - Estan vivos
+[Ticker] Ping #3 - Hello world
+[Ticker] Ping #801 - I have no mouth
+[Ticker] Señal de parada recibida. Cerrando limpiamente.
+[Ticker] Ping #802 - I must screem
+[Ticker] Ping #803 - Hello world
+[Ticker] Ping #804 - Adios mundo :0
+[Ticker] Ping #805 - Estan vivos
+[Ticker] Ping #806 - I have no mouth
+[Ticker] Ping #807 - I must screem
+[Ticker] Ping #808 - Hello world
+[Ticker] Ping #809 - Adios mundo :0
+[Ticker] Ping #810 - Estan vivos
+[Ticker] Ping #811 - I have no mouth
+[Ticker] Ping #812 - I must screem
+[Ticker] Ping #813 - Hello world
+[Ticker] Ping #814 - Adios mundo :0
+[Ticker] Ping #815 - Estan vivos
+[Ticker] Ping #816 - I have no mouth
+[Ticker] Ping #817 - I must screem
+[Ticker] Ping #818 - Hello world
+[Ticker] Ping #819 - Adios mundo :0
+[Ticker] Ping #820 - Estan vivos
+[Ticker] Ping #821 - I have no mouth
+[Ticker] Ping #822 - I must screem
+[Ticker] Ping #823 - Hello world
+[Ticker] Ping #824 - Adios mundo :0
+[Ticker] Ping #825 - Estan vivos
+[Ticker] Ping #826 - I have no mouth
+[Ticker] Ping #827 - I must screem
+[Ticker] Ping #828 - Hello world
+[Ticker] Ping #829 - Adios mundo :0
+[Ticker] Ping #830 - Estan vivos
+[Ticker] Ping #831 - I have no mouth
+[Ticker] Ping #832 - I must screem
+[Ticker] Ping #833 - Hello world
+[Ticker] Ping #834 - Adios mundo :0
+[Ticker] Ping #835 - Estan vivos
+[Ticker] Ping #836 - I have no mouth
+[Ticker] Servicio iniciado. PID: 13061
+[Ticker] Ping #0 - Estan vivos
+[Ticker] Ping #837 - I must screem
+[Ticker] Ping #1 - I have no mouth
+[Ticker] Ping #838 - Hello world
+[Ticker] Ping #2 - I must scream
+[Ticker] Ping #839 - Adios mundo :0
+[Ticker] Ping #3 - Hello world
+[Ticker] Ping #840 - Estan vivos
+[Ticker] Ping #4 - Adios mundo :0
+[Ticker] Ping #841 - I have no mouth
+[Ticker] Señal de parada recibida. Cerrando limpiamente.
